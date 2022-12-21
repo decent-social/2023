@@ -25,13 +25,13 @@ main() {
   # commit $OUT_DIR - required for subtree
   1>&2 git add --force $OUT_DIR
   1>&2 git commit -m "committing $OUT_DIR before splitting subtree"
-  echo "commit_return_code=$commit_return_code"
+  commit_return_code=$?
 
   # split out new branch from $OUT_DIR. This does not switch to the branch.
   1>&2 git subtree split --prefix=$OUT_DIR -b $OUT_DIR_SPLIT_BRANCH
   # Now undo the commit that added $OUT_DIR
   # commit_return_code will be 1 if no commit was actually added
-  if [ $commit_return_code -ne 1 ]; then
+  if [ "$commit_return_code" -ne 1 ]; then
     1>&2 git reset HEAD^
   fi
 
