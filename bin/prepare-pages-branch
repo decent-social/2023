@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -e
+#!/bin/bash
+set -e
 
 OUT_DIR="${OUT_DIR:-out}"
 OUT_DIR_SPLIT_BRANCH="${OUT_DIR_SPLIT_BRANCH:-$(date +%s)-out-dir}"
@@ -24,20 +25,20 @@ main() {
   # commit $OUT_DIR - required for subtree
   1>&2 git add --force $OUT_DIR
   1>&2 git commit -m "committing $OUT_DIR before splitting subtree"
-  echo "commit_return_code=$commit_return_code"
+  commit_return_code=$?
 
   # split out new branch from $OUT_DIR. This does not switch to the branch.
   1>&2 git subtree split --prefix=$OUT_DIR -b $OUT_DIR_SPLIT_BRANCH
   # Now undo the commit that added $OUT_DIR
   # commit_return_code will be 1 if no commit was actually added
-  if [ $commit_return_code -ne 1 ]; then
+  if [ "$commit_return_code" -ne 1 ]; then
     1>&2 git reset HEAD^
   fi
 
   1>&2 echo "Split $OUT_DIR to branch '$OUT_DIR_SPLIT_BRANCH'"
 
   # Create a new branch derrived from `pages` branch
-  1>&2 git checkout $PAGES_PR_TARGET_BRANCH
+  1>&2 git checkout -- $PAGES_PR_TARGET_BRANCH
   1>&2 git checkout -b $PAGES_PR_SRC_BRANCH --track $PAGES_PR_TARGET_REMOTE/$PAGES_PR_TARGET_BRANCH
   # rm old contents from previous builds
   1>&2 rm -rf * .next
