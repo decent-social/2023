@@ -38,7 +38,7 @@ main() {
   1>&2 echo "Split $OUT_DIR to branch '$OUT_DIR_SPLIT_BRANCH'"
 
   # Create a new branch derrived from `pages` branch
-  1>&2 git checkout $PAGES_PR_TARGET_BRANCH
+  1>&2 git checkout -- $PAGES_PR_TARGET_BRANCH
   1>&2 git checkout -b $PAGES_PR_SRC_BRANCH --track $PAGES_PR_TARGET_REMOTE/$PAGES_PR_TARGET_BRANCH
   # rm old contents from previous builds
   1>&2 rm -rf * .next
