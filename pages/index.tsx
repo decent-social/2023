@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Decent Social is a gathering to discuss the social web.
+            Decent Social is a gathering to discuss the social web, and you're invited.
           </p>
         </div>
       </main>
