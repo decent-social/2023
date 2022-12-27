@@ -25,7 +25,7 @@ case "$response" in
   [yY][eE][sS]|[yY])
     echo "Pushing changes to remote"
     git commit -m "Generated from $GIT_SHA of DecentSocial/website" &&\
-      git push main
+      git push origin main
     ;;
   *)
     echo "Abandoning changes"
