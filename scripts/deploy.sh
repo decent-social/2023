@@ -19,9 +19,8 @@ if [[ "$SUBPROJECT_BRANCH" != "main" ]]; then
 fi
 git add -A .
 git status
-read -r -p "Are you sure you want to deploy these changes? [y/N]"\
-  response
 
+read -r -p "Are you sure you want to deploy these changes? [y/N]" response
 case "$response" in
   [yY][eE][sS]|[yY])
     echo "Pushing changes to remote"
