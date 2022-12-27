@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>decent social</title>
+        <title>DecentSocial</title>
         <meta name="description" content="a social about social" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
