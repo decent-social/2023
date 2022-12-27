@@ -14,7 +14,7 @@ export default function DecentSocialLandingPage() {
         <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
           <div className="text-center">
             <h2>
-              <a href="https://opencollective.com/decentsocial/events/decentsocial-conference-8c7e0a05/contribute/decentsocial-2023-49790">Regsiter now</a>
+              <a href="https://opencollective.com/decentsocial/events/decentsocial-conference-8c7e0a05/contribute/decentsocial-2023-49790">Register now</a>
             </h2>
           </div>
           <h2>What is DecentSocial?</h2>
