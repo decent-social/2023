@@ -1,0 +1,3 @@
+[submodule "decentsocial.codeberg.page"]
+	path = decentsocial.codeberg.page
+	url = git@codeberg.org:DecentSocial/pages.git
