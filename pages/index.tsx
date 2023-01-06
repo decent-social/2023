@@ -43,7 +43,7 @@ export default function DecentSocialLandingPage() {
 
           <h2>Please be decent</h2>
           <p>
-            We operate using the shared guideposts of <a href="https://opencollective.com/redirect?url=https%3A%2F%2Fwww.contributor-covenant.org%2Fversion%2F2%2F1%2Fcode_of_conduct%2Fcode_of_conduct.md">The Contributor Covenant</a> and <a href="https://opencollective.com/redirect?url=https%3A%2F%2Fwww.eff.org%2Fpages%2Fevent-expectations">The EFF Event Expectations</a>. Our conference is an open and welcoming environment, and we have a zero tolerance policy for harassment.
+            We operate using the shared guideposts of <a href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md">The Contributor Covenant</a> and <a href="https://www.eff.org/pages/event-expectations">The EFF Event Expectations</a>. Our conference is an open and welcoming environment, and we have a zero tolerance policy for harassment.
           </p>
 
           <h2>Why tickets?</h2>
