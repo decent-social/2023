@@ -26,11 +26,16 @@ const schedule = [
       {
         name: 'Break',
         start: new Date('2023-02-11T03:10:00Z'),
-        end: new Date('2023-02-11T03:20:00Z'),
+        end: new Date('2023-02-11T03:15:00Z'),
       },
       {
         name: 'Session 2',
-        start: new Date('2023-02-11T03:20:00Z'),
+        start: new Date('2023-02-11T03:15:00Z'),
+        end: new Date('2023-02-11T03:55:00Z'),
+      },
+      {
+        name: 'Break',
+        start: new Date('2023-02-11T03:55:00Z'),
         end: new Date('2023-02-11T04:00:00Z'),
       },
       {
@@ -41,16 +46,21 @@ const schedule = [
       {
         name: 'Break',
         start: new Date('2023-02-11T04:40:00Z'),
-        end: new Date('2023-02-11T04:50:00Z'),
+        end: new Date('2023-02-11T04:45:00Z'),
       },
       {
         name: 'Session 4',
-        start: new Date('2023-02-11T04:50:00Z'),
-        end: new Date('2023-02-11T05:20:00Z'),
+        start: new Date('2023-02-11T04:45:00Z'),
+        end: new Date('2023-02-11T05:25:00Z'),
+      },
+      {
+        name: 'Break',
+        start: new Date('2023-02-11T05:25:00Z'),
+        end: new Date('2023-02-11T05:30:00Z'),
       },
       {
         name: 'Closing',
-        start: new Date('2023-02-11T05:20:00Z'),
+        start: new Date('2023-02-11T05:30:00Z'),
         end: new Date('2023-02-11T06:00:00Z'),
       },
     ],
@@ -74,11 +84,16 @@ const schedule = [
       {
         name: 'Break',
         start: new Date('2023-02-11T11:10:00Z'),
-        end: new Date('2023-02-11T11:20:00Z'),
+        end: new Date('2023-02-11T11:15:00Z'),
       },
       {
         name: 'Session 2',
-        start: new Date('2023-02-11T11:20:00Z'),
+        start: new Date('2023-02-11T11:15:00Z'),
+        end: new Date('2023-02-11T11:55:00Z'),
+      },
+      {
+        name: 'Break',
+        start: new Date('2023-02-11T11:55:00Z'),
         end: new Date('2023-02-11T12:00:00Z'),
       },
       {
@@ -89,16 +104,21 @@ const schedule = [
       {
         name: 'Break',
         start: new Date('2023-02-11T12:40:00Z'),
-        end: new Date('2023-02-11T12:50:00Z'),
+        end: new Date('2023-02-11T12:45:00Z'),
       },
       {
         name: 'Session 4',
-        start: new Date('2023-02-11T12:50:00Z'),
-        end: new Date('2023-02-11T13:20:00Z'),
+        start: new Date('2023-02-11T12:45:00Z'),
+        end: new Date('2023-02-11T13:25:00Z'),
+      },
+      {
+        name: 'Break',
+        start: new Date('2023-02-11T13:25:00Z'),
+        end: new Date('2023-02-11T13:30:00Z'),
       },
       {
         name: 'Closing',
-        start: new Date('2023-02-11T13:20:00Z'),
+        start: new Date('2023-02-11T13:30:00Z'),
         end: new Date('2023-02-11T14:00:00Z'),
       },
     ],
@@ -122,11 +142,16 @@ const schedule = [
       {
         name: 'Break',
         start: new Date('2023-02-11T19:10:00Z'),
-        end: new Date('2023-02-11T19:20:00Z'),
+        end: new Date('2023-02-11T19:15:00Z'),
       },
       {
         name: 'Session 2',
-        start: new Date('2023-02-11T19:20:00Z'),
+        start: new Date('2023-02-11T19:15:00Z'),
+        end: new Date('2023-02-11T19:55:00Z'),
+      },
+      {
+        name: 'Break',
+        start: new Date('2023-02-11T19:55:00Z'),
         end: new Date('2023-02-11T20:00:00Z'),
       },
       {
@@ -137,16 +162,21 @@ const schedule = [
       {
         name: 'Break',
         start: new Date('2023-02-11T20:40:00Z'),
-        end: new Date('2023-02-11T20:50:00Z'),
+        end: new Date('2023-02-11T20:45:00Z'),
       },
       {
         name: 'Session 4',
-        start: new Date('2023-02-11T20:50:00Z'),
-        end: new Date('2023-02-11T21:20:00Z'),
+        start: new Date('2023-02-11T20:45:00Z'),
+        end: new Date('2023-02-11T21:25:00Z'),
+      },
+      {
+        name: 'Break',
+        start: new Date('2023-02-11T21:25:00Z'),
+        end: new Date('2023-02-11T21:30:00Z'),
       },
       {
         name: 'Closing',
-        start: new Date('2023-02-11T21:20:00Z'),
+        start: new Date('2023-02-11T21:30:00Z'),
         end: new Date('2023-02-11T22:00:00Z'),
       },
     ],
