@@ -17,7 +17,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="At DecentSocail you'll be able to connect with others the global community building the social web, learning from different aproaches and tackling the complex challenges of the decentralied web."
+          content="DecentSocial is a free digital unconference on Feb 11th for the builders of the decentralized social web. Whether you're an engineer working on protocols, or an organizer building community, this conference is for you."
         />
       </Head>
       <Header />
