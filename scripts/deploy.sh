@@ -31,4 +31,5 @@ esac
 
 popd
 
+git add decentsocial.codeberg.page
 git commit -m "Deployed $GIT_SHA to DecentSocial/pages"
