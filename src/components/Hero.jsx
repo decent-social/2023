@@ -1,10 +1,16 @@
 import Image from 'next/image'
+import useSWR from 'swr'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background.jpg'
 
 export function Hero() {
+  const fetcher = (url) => fetch(url).then((res) => res.json())
+  const { data: attendees } = useSWR(
+    'https://opencollective.com/decentsocial/events/decentsocial-conference-8c7e0a05/attendees.json',
+    fetcher
+  )
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
       <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
@@ -23,31 +29,32 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
-            <span className="sr-only">DeceptiConf - </span>A design conference
-            for the dark side.
+            <span className="sr-only">DecentSocial - </span>We deserve a decent
+            social web.
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
             <p>
-              The next generation of web users are tech-savvy and suspicious.
-              They know how to use dev tools, they can detect a phishing scam
-              from a mile away, and they certainly aren’t accepting any checks
-              from Western Union.
+              The centralized social web is failing us. Our online lives are
+              controlled by a handful of billionaires and the whims of their
+              personal agendas. It&apos;s time to come together and show the
+              world there&apos;s a better way.
             </p>
             <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
-              developed to trick even the smartest visitors, and you’ll learn
-              how to deploy them without ever being detected.
+              So we&apos;re hosting a free digital unconference on Feb 11th for
+              the builders of the decentralized social web. Whether you&apos;re
+              an engineer working on protocols, or an organizer building
+              community, this conference is for you.
             </p>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
-            Get your tickets
+          <Button href="/register" className="mt-10 w-full sm:hidden">
+            Register now
           </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '18'],
-              ['People Attending', '2,091'],
-              ['Venue', 'Staples Center'],
-              ['Location', 'Los Angeles'],
+              ['Cost', 'Free'],
+              ['People Attending', attendees ? attendees.length : 0],
+              ['Keynote Speaker', 'You'],
+              ['Location', 'Online'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blue-600">{name}</dt>

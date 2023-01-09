@@ -1,32 +1,33 @@
 import Head from 'next/head'
 
-import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { Newsletter } from '@/components/Newsletter'
+import { Attendees } from '@/components/Attendees'
 import { Schedule } from '@/components/Schedule'
-import { Speakers } from '@/components/Speakers'
-import { Sponsors } from '@/components/Sponsors'
+import { InlineRegister } from '@/components/InlineRegister'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>DeceptiConf - A community-driven design conference</title>
+        <title>
+          DecentSocial - A homegrown conference for the builders of the
+          decentralized social web.
+        </title>
         <meta
           name="description"
-          content="At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected."
+          content="At DecentSocail you'll be able to connect with others the global community building the social web, learning from different aproaches and tackling the complex challenges of the decentralied web."
         />
       </Head>
       <Header />
       <main>
         <Hero />
-        <Speakers />
         <Schedule />
-        <Sponsors />
-        <Newsletter />
+        <Attendees />
+        <InlineRegister />
+        <Footer />
       </main>
-      <Footer />
     </>
   )
 }

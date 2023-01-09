@@ -8,152 +8,146 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
-    date: 'April 4',
-    dateTime: '2022-04-04',
-    summary:
-      'The first day of the conference is focused on dark patterns for ecommerce.',
+    name: 'Asia + South Pacific',
+    start: new Date('2023-02-11T02:00:00Z'),
+    end: new Date('2023-02-11T06:00:00Z'),
+    summary: 'Moderated by Mix Irving',
     timeSlots: [
       {
-        name: 'Steven McHail',
-        description: 'Not so one-time payments',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Opening',
+        start: new Date('2023-02-11T02:00:00Z'),
+        end: new Date('2023-02-11T02:30:00Z'),
       },
       {
-        name: 'Jaquelin Isch',
-        description: 'The finer print',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Session 1',
+        start: new Date('2023-02-11T02:30:00Z'),
+        end: new Date('2023-02-11T03:10:00Z'),
       },
       {
-        name: 'Dianne Guilianelli',
-        description: 'Post-purchase blackmail',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Break',
+        start: new Date('2023-02-11T03:10:00Z'),
+        end: new Date('2023-02-11T03:20:00Z'),
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        name: 'Session 2',
+        start: new Date('2023-02-11T03:20:00Z'),
+        end: new Date('2023-02-11T04:00:00Z'),
       },
       {
-        name: 'Ronni Cantadore',
-        description: 'Buy or die',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Session 3',
+        start: new Date('2023-02-11T04:00:00Z'),
+        end: new Date('2023-02-11T04:40:00Z'),
       },
       {
-        name: 'Erhart Cockrin',
-        description: 'In-person cancellation',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Break',
+        start: new Date('2023-02-11T04:40:00Z'),
+        end: new Date('2023-02-11T04:50:00Z'),
       },
       {
-        name: 'Parker Johnson',
-        description: 'The pay/cancel switcheroo',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Session 4',
+        start: new Date('2023-02-11T04:50:00Z'),
+        end: new Date('2023-02-11T05:20:00Z'),
+      },
+      {
+        name: 'Closing',
+        start: new Date('2023-02-11T05:20:00Z'),
+        end: new Date('2023-02-11T06:00:00Z'),
       },
     ],
   },
   {
-    date: 'April 5',
-    dateTime: '2022-04-05',
-    summary:
-      'Next we spend the day talking about deceiving people with technology.',
+    name: 'Africa + Europe',
+    start: new Date('2023-02-11T10:00:00Z'),
+    end: new Date('2023-02-11T14:00:00Z'),
+    summary: 'Moderated by Ian Davis',
     timeSlots: [
       {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Opening',
+        start: new Date('2023-02-11T10:00:00Z'),
+        end: new Date('2023-02-11T10:30:00Z'),
       },
       {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Session 1',
+        start: new Date('2023-02-11T10:30:00Z'),
+        end: new Date('2023-02-11T11:10:00Z'),
       },
       {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Break',
+        start: new Date('2023-02-11T11:10:00Z'),
+        end: new Date('2023-02-11T11:20:00Z'),
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        name: 'Session 2',
+        start: new Date('2023-02-11T11:20:00Z'),
+        end: new Date('2023-02-11T12:00:00Z'),
       },
       {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Session 3',
+        start: new Date('2023-02-11T12:00:00Z'),
+        end: new Date('2023-02-11T12:40:00Z'),
       },
       {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Break',
+        start: new Date('2023-02-11T12:40:00Z'),
+        end: new Date('2023-02-11T12:50:00Z'),
       },
       {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Session 4',
+        start: new Date('2023-02-11T12:50:00Z'),
+        end: new Date('2023-02-11T13:20:00Z'),
+      },
+      {
+        name: 'Closing',
+        start: new Date('2023-02-11T13:20:00Z'),
+        end: new Date('2023-02-11T14:00:00Z'),
       },
     ],
   },
   {
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    summary:
-      'We close out the event previewing new techniques that are still in development.',
+    name: 'Americas',
+    start: new Date('2023-02-11T18:00:00Z'),
+    end: new Date('2023-02-11T22:00:00Z'),
+    summary: 'Moderated by Ben Goering',
     timeSlots: [
       {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Opening',
+        start: new Date('2023-02-11T18:00:00Z'),
+        end: new Date('2023-02-11T18:30:00Z'),
       },
       {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Session 1',
+        start: new Date('2023-02-11T18:30:00Z'),
+        end: new Date('2023-02-11T19:10:00Z'),
       },
       {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Break',
+        start: new Date('2023-02-11T19:10:00Z'),
+        end: new Date('2023-02-11T19:20:00Z'),
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
+        name: 'Session 2',
+        start: new Date('2023-02-11T19:20:00Z'),
+        end: new Date('2023-02-11T20:00:00Z'),
       },
       {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
+        name: 'Session 3',
+        start: new Date('2023-02-11T20:00:00Z'),
+        end: new Date('2023-02-11T20:40:00Z'),
       },
       {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: 'Break',
+        start: new Date('2023-02-11T20:40:00Z'),
+        end: new Date('2023-02-11T20:50:00Z'),
       },
       {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: 'Session 4',
+        start: new Date('2023-02-11T20:50:00Z'),
+        end: new Date('2023-02-11T21:20:00Z'),
+      },
+      {
+        name: 'Closing',
+        start: new Date('2023-02-11T21:20:00Z'),
+        end: new Date('2023-02-11T22:00:00Z'),
       },
     ],
   },
@@ -185,21 +179,22 @@ function ScheduleTabbed() {
     >
       <Tab.List className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pl-4 pb-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
         {({ selectedIndex }) =>
-          schedule.map((day, dayIndex) => (
+          schedule.map((region, i) => (
             <div
-              key={day.dateTime}
+              key={region.start.toISOString()}
               className={clsx(
                 'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
-                dayIndex !== selectedIndex && 'opacity-70'
+                i !== selectedIndex && 'opacity-70'
               )}
             >
-              <DaySummary
-                day={{
-                  ...day,
+              <RegionSummary
+                region={{
+                  ...region,
+                  tabbed: true,
                   date: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {day.date}
+                      {region.start.toLocaleDateString()}
                     </Tab>
                   ),
                 }}
@@ -209,12 +204,12 @@ function ScheduleTabbed() {
         }
       </Tab.List>
       <Tab.Panels>
-        {schedule.map((day) => (
+        {schedule.map((region, i) => (
           <Tab.Panel
-            key={day.dateTime}
+            key={i}
             className="[&:not(:focus-visible)]:focus:outline-none"
           >
-            <TimeSlots day={day} />
+            <TimeSlots region={region} />
           </Tab.Panel>
         ))}
       </Tab.Panels>
@@ -222,20 +217,23 @@ function ScheduleTabbed() {
   )
 }
 
-function DaySummary({ day }) {
+function RegionSummary({ region }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
-        <time dateTime={day.dateTime}>{day.date}</time>
+        {region.name}
       </h3>
+      <p className="text-bold mt-1.5 font-bold tracking-tight text-blue-900">
+        {region.startDate}
+      </p>
       <p className="mt-1.5 text-base tracking-tight text-blue-900">
-        {day.summary}
+        {region.summary}
       </p>
     </>
   )
 }
 
-function TimeSlots({ day, className }) {
+function TimeSlots({ region, className }) {
   return (
     <ol
       role="list"
@@ -244,10 +242,12 @@ function TimeSlots({ day, className }) {
         'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
       )}
     >
-      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
+      {region.timeSlots.map((timeSlot, timeSlotIndex) => (
         <li
-          key={timeSlot.start}
-          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} PST`}
+          key={timeSlot.start.toISOString()}
+          aria-label={`${
+            timeSlot.name
+          } at ${timeSlot.start.toLocaleString()} - ${timeSlot.end.toLocaleString()}`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
@@ -255,20 +255,20 @@ function TimeSlots({ day, className }) {
           <h4 className="text-lg font-semibold tracking-tight text-blue-900">
             {timeSlot.name}
           </h4>
-          {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-blue-900">
-              {timeSlot.description}
-            </p>
-          )}
           <p className="mt-1 font-mono text-sm text-slate-500">
-            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
-              {timeSlot.start}
-            </time>{' '}
-            -{' '}
-            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
-              {timeSlot.end}
-            </time>{' '}
-            PST
+            <time dateTime={timeSlot.start.toISOString()}>
+              {timeSlot.start.toLocaleTimeString([], {
+                hour: 'numeric',
+                minute: 'numeric',
+              })}
+            </time>
+            {' - '}
+            <time dateTime={timeSlot.end.toISOString()}>
+              {timeSlot.end.toLocaleTimeString([], {
+                hour: 'numeric',
+                minute: 'numeric',
+              })}
+            </time>
           </p>
         </li>
       ))}
@@ -279,10 +279,18 @@ function TimeSlots({ day, className }) {
 function ScheduleStatic() {
   return (
     <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
-      {schedule.map((day) => (
-        <section key={day.dateTime}>
-          <DaySummary day={day} />
-          <TimeSlots day={day} className="mt-10" />
+      {schedule.map((region) => (
+        <section key={region.start.toISOString()}>
+          <RegionSummary
+            region={{
+              ...region,
+              startDate: region.start.toLocaleDateString([], {
+                month: 'long',
+                day: 'numeric',
+              }),
+            }}
+          />
+          <TimeSlots region={region} className="mt-10" />
         </section>
       ))}
     </div>
@@ -295,13 +303,18 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            Building a decent social web is a global problem, and our schedule
+            is designed to be accessible to all timezones.
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            Each session will have a few rooms running in parallel moderated by
+            different members of the community. If you are interested in serving
+            as a moderator of a room for one or more of our regions, please
+            reach out to{' '}
+            <a href="mailto:organizers@decentsocail.net">
+              organizers@decentsocial.net
+            </a>
+            .
           </p>
         </div>
       </Container>

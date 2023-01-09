@@ -19,7 +19,7 @@ function ArrowRightIcon(props) {
   )
 }
 
-export function Newsletter() {
+export function InlineRegister() {
   return (
     <section id="newsletter" aria-label="Newsletter">
       <Container>
@@ -38,30 +38,24 @@ export function Newsletter() {
                 Stay up to date
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
-                Get updates on all of our events and be the first to get
-                notified when tickets go on sale.
+                As a registered attendeed, you will get announcements and
+                updates through OpenCollective
               </p>
             </div>
-            <form>
+            <div>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
-                Sign up to our newsletter <span aria-hidden="true">&darr;</span>
+                Register to recieve updates{' '}
+                <span aria-hidden="true">&darr;</span>
               </h3>
-              <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-blue-900/5 focus-within:ring-2 focus-within:ring-blue-900">
-                <input
-                  type="email"
-                  required
-                  placeholder="Email address"
-                  aria-label="Email address"
-                  className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none"
-                />
-                <Button type="submit">
-                  <span className="sr-only sm:not-sr-only">Sign up today</span>
-                  <span className="sm:hidden">
-                    <ArrowRightIcon className="h-6 w-6" />
-                  </span>
-                </Button>
-              </div>
-            </form>
+              <Button href="/register" className="mt-5">
+                <span className="sr-only text-3xl sm:not-sr-only">
+                  Register now
+                </span>
+                <span className="sm:hidden">
+                  <ArrowRightIcon className="h-6 w-6" />
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
       </Container>
