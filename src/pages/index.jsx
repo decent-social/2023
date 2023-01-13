@@ -24,7 +24,7 @@ export default function Home() {
       <main>
         <Hero />
         <Schedule />
-        <Attendees />
+        {/* <Attendees /> */}
         <InlineRegister />
         <Footer />
       </main>
