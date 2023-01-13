@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "echo DEPRECATED // formerly: ./scripts/deploy.sh"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {

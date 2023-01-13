@@ -4,8 +4,15 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
-  images: {
-    unoptimized: true,
+  async redirects() {
+    return [
+      {
+        source: '/register',
+        destination: 'https://opencollective.com/decentsocial/events/decentsocial-conference-8c7e0a05/contribute/decentsocial-2023-49790',
+        permanent: false,
+        basePath: false,
+      },
+    ]
   },
 }
 
