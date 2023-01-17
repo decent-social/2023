@@ -11,7 +11,7 @@ const schedule = [
     name: 'Asia + South Pacific',
     start: new Date('2023-02-11T02:00:00Z'),
     end: new Date('2023-02-11T06:00:00Z'),
-    summary: 'Moderated by Mix Irving',
+    summary: '',
     timeSlots: [
       {
         name: 'Opening',
@@ -69,7 +69,7 @@ const schedule = [
     name: 'Africa + Europe',
     start: new Date('2023-02-11T10:00:00Z'),
     end: new Date('2023-02-11T14:00:00Z'),
-    summary: 'Moderated by Ian Davis',
+    summary: '',
     timeSlots: [
       {
         name: 'Opening',
@@ -127,7 +127,7 @@ const schedule = [
     name: 'Americas',
     start: new Date('2023-02-11T18:00:00Z'),
     end: new Date('2023-02-11T22:00:00Z'),
-    summary: 'Moderated by Ben Goering',
+    summary: '',
     timeSlots: [
       {
         name: 'Opening',
@@ -255,9 +255,6 @@ function RegionSummary({ region }) {
       </h3>
       <p className="text-bold mt-1.5 font-bold tracking-tight text-blue-900">
         {region.startDate}
-      </p>
-      <p className="mt-1.5 text-base tracking-tight text-blue-900">
-        {region.summary}
       </p>
     </>
   )
