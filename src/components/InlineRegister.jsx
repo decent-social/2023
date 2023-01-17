@@ -38,7 +38,7 @@ export function InlineRegister() {
                 Stay up to date
               </p>
               <p className="mt-4 text-lg tracking-tight text-blue-900">
-                As a registered attendeed, you will get announcements and
+                As a registered attendee, you will get announcements and
                 updates through OpenCollective
               </p>
             </div>
