@@ -224,7 +224,7 @@ function ScheduleTabbed() {
                   date: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {region.start.toLocaleDateString()}
+                      {`${region.start.toLocaleDateString()} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
                     </Tab>
                   ),
                 }}
@@ -254,7 +254,7 @@ function RegionSummary({ region }) {
         {region.name}
       </h3>
       <p className="text-bold mt-1.5 font-bold tracking-tight text-blue-900">
-        {region.startDate}
+        {`${region.startDate} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
       </p>
     </>
   )
@@ -274,7 +274,7 @@ function TimeSlots({ region, className }) {
           key={timeSlot.start.toISOString()}
           aria-label={`${
             timeSlot.name
-          } at ${timeSlot.start.toLocaleString()} - ${timeSlot.end.toLocaleString()}`}
+          } at ${timeSlot.start.toLocaleString()} (${Intl.DateTimeFormat().resolvedOptions().timeZone}) - ${timeSlot.end.toLocaleString()} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
@@ -284,17 +284,18 @@ function TimeSlots({ region, className }) {
           </h4>
           <p className="mt-1 font-mono text-sm text-slate-500">
             <time dateTime={timeSlot.start.toISOString()}>
-              {timeSlot.start.toLocaleTimeString([], {
+              {`Start: ${timeSlot.start.toLocaleTimeString([], {
                 hour: 'numeric',
                 minute: 'numeric',
-              })}
+              })} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
             </time>
-            {' - '}
+          </p>
+          <p className="mt-1 font-mono text-sm text-slate-500">
             <time dateTime={timeSlot.end.toISOString()}>
-              {timeSlot.end.toLocaleTimeString([], {
+              {`  End: ${timeSlot.end.toLocaleTimeString([], {
                 hour: 'numeric',
                 minute: 'numeric',
-              })}
+              })} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
             </time>
           </p>
         </li>
