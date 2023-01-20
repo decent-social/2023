@@ -221,10 +221,13 @@ function ScheduleTabbed() {
                 region={{
                   ...region,
                   tabbed: true,
-                  date: (
+                  startDate: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {`${region.start.toLocaleDateString()} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
+                      {`${region.start.toLocaleDateString([], {
+                        month: 'long',
+                        day: 'numeric',
+                      })} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
                     </Tab>
                   ),
                 }}
@@ -254,7 +257,7 @@ function RegionSummary({ region }) {
         {region.name}
       </h3>
       <p className="text-bold mt-1.5 font-bold tracking-tight text-blue-900">
-        {`${region.startDate} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
+        {region.startDate}
       </p>
     </>
   )
@@ -312,10 +315,10 @@ function ScheduleStatic() {
           <RegionSummary
             region={{
               ...region,
-              startDate: region.start.toLocaleDateString([], {
+              startDate: `${region.start.toLocaleDateString([], {
                 month: 'long',
                 day: 'numeric',
-              }),
+              })} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`,
             }}
           />
           <TimeSlots region={region} className="mt-10" />
