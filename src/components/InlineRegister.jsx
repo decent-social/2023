@@ -44,7 +44,7 @@ export function InlineRegister() {
             </div>
             <div>
               <h3 className="text-lg font-semibold tracking-tight text-blue-900">
-                Register to recieve updates{' '}
+                Register to receive updates{' '}
                 <span aria-hidden="true">&darr;</span>
               </h3>
               <Button href="/register" className="mt-5">
