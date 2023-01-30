@@ -224,10 +224,31 @@ function ScheduleTabbed() {
                   startDate: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {`${region.start.toLocaleDateString([], {
-                        month: 'long',
-                        day: 'numeric',
-                      })} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
+                      <p>
+                        <time dateTime={region.start.toISOString()}>
+                          {`${region.start.toLocaleDateString([], {
+                            month: 'long',
+                            day: 'numeric',
+                          })} (${
+                            Intl.DateTimeFormat().resolvedOptions().timeZone
+                          })`}
+                        </time>
+                      </p>
+                      <p>
+                        <time dateTime={region.start.toISOString()}>
+                          {`${region.start.toLocaleTimeString([], {
+                            hour: 'numeric',
+                            minute: 'numeric',
+                          })}`}
+                        </time>
+                        {' - '}
+                        <time dateTime={region.end.toISOString()}>
+                          {`${region.end.toLocaleTimeString([], {
+                            hour: 'numeric',
+                            minute: 'numeric',
+                          })}`}
+                        </time>
+                      </p>
                     </Tab>
                   ),
                 }}
@@ -277,7 +298,11 @@ function TimeSlots({ region, className }) {
           key={timeSlot.start.toISOString()}
           aria-label={`${
             timeSlot.name
-          } at ${timeSlot.start.toLocaleString()} (${Intl.DateTimeFormat().resolvedOptions().timeZone}) - ${timeSlot.end.toLocaleString()} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}
+          } at ${timeSlot.start.toLocaleString()} (${
+            Intl.DateTimeFormat().resolvedOptions().timeZone
+          }) - ${timeSlot.end.toLocaleString()} (${
+            Intl.DateTimeFormat().resolvedOptions().timeZone
+          })`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
@@ -315,10 +340,35 @@ function ScheduleStatic() {
           <RegionSummary
             region={{
               ...region,
-              startDate: `${region.start.toLocaleDateString([], {
-                month: 'long',
-                day: 'numeric',
-              })} (${Intl.DateTimeFormat().resolvedOptions().timeZone})`,
+              startDate: (
+                <>
+                  <p>
+                    <time dateTime={region.start.toISOString()}>
+                      {`${region.start.toLocaleDateString([], {
+                        month: 'long',
+                        day: 'numeric',
+                      })} (${
+                        Intl.DateTimeFormat().resolvedOptions().timeZone
+                      })`}
+                    </time>
+                  </p>
+                  <p>
+                    <time dateTime={region.start.toISOString()}>
+                      {`${region.start.toLocaleTimeString([], {
+                        hour: 'numeric',
+                        minute: 'numeric',
+                      })}`}
+                    </time>
+                    {' - '}
+                    <time dateTime={region.end.toISOString()}>
+                      {`${region.end.toLocaleTimeString([], {
+                        hour: 'numeric',
+                        minute: 'numeric',
+                      })}`}
+                    </time>
+                  </p>
+                </>
+              ),
             }}
           />
           <TimeSlots region={region} className="mt-10" />
