@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "echo DEPRECATED // formerly: ./scripts/deploy.sh"
+    "deploy": "vercel --prod"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
