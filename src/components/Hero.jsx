@@ -5,12 +5,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background.jpg'
 
-export function Hero() {
-  const fetcher = (url) => fetch(url).then((res) => res.json())
-  const { data: attendees } = useSWR(
-    'https://opencollective.com/decentsocial/events/decentsocial-conference-8c7e0a05/attendees.json',
-    fetcher
-  )
+export function Hero({attendees}) {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
       <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
@@ -52,7 +47,7 @@ export function Hero() {
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Cost', 'Free'],
-              ['People Attending', '125+'],
+              ['People Attending', attendees.length],
               ['Keynote Speaker', 'You'],
               ['Location', 'Online'],
             ].map(([name, value]) => (
