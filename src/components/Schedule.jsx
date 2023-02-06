@@ -392,7 +392,7 @@ export function Schedule() {
             different members of the community. If you are interested in serving
             as a moderator of a room for one or more of our regions, please
             reach out to{' '}
-            <a href="mailto:organizers@decentsocail.net">
+            <a href="mailto:organizers@decentsocial.net">
               organizers@decentsocial.net
             </a>
             .
