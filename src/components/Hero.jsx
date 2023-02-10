@@ -41,7 +41,7 @@ export function Hero() {
           </h1>
           <Button
             href="https://decentsocial.meet.coop/mor-rlm-s3t-m0w"
-            className="mt-5 font-display text-5xl font-bold tracking-tighter text-witch-purple sm:text-7xl"
+            className="mt-5 font-display text-5xl font-bold tracking-tighter text-witch-white sm:text-7xl"
           >
             Join the Conference
           </Button>
