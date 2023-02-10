@@ -1,64 +1,127 @@
-import Image from 'next/image'
-import useSWR from 'swr'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import {
+  ConferenceGuide,
+  RegistrationSheet,
+  RoomA,
+  RoomB,
+  RoomC,
+  RoomD,
+  RoomE,
+  RoomF,
+  RoomG,
+  RoomH,
+  RoomI,
+  RoomJ,
+  RoomK,
+  RoomL,
+  RoomM,
+  RoomN,
+  RoomO,
+  RoomP,
+  RoomQ,
+  RoomR,
+  RoomS,
+  RoomT,
+  RoomU,
+  RoomV,
+  RoomW,
+  RoomX,
+  RoomY,
+  RoomZ,
+} from './Rooms'
 
-export function Hero({attendees}) {
+export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
-        <Image
-          className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
-          src={backgroundImage}
-          alt=""
-          width={918}
-          height={1495}
-          priority
-          unoptimized
-        />
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-      </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
-            <span className="sr-only">DecentSocial - </span>We deserve a decent
-            social web.
+          <h1 className="font-display text-5xl font-bold tracking-tighter text-witch-purple sm:text-7xl">
+            Welcome!
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
+          <Button
+            href="https://decentsocial.meet.coop/mor-rlm-s3t-m0w"
+            className="mt-5 font-display text-5xl font-bold tracking-tighter text-witch-purple sm:text-7xl"
+          >
+            Join the Conference
+          </Button>
+          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-witch-dark-blue">
             <p>
-              The centralized social web is failing us. Our online lives are
-              controlled by a handful of billionaires and the whims of their
-              personal agendas. It&apos;s time to come together and show the
-              world there&apos;s a better way.
+              DecentSocial is using meet.coop to run our virtual unconference.
+              In order to ensure we have encough space for our conversations,
+              we&apos;ve created 26 different rooms on our video hosting
+              infrastructure you can use to have unconference conversations, one
+              for every letter of the English alphabet.
             </p>
             <p>
-              So we&apos;re hosting a free digital unconference on Feb 11th for
-              the builders of the decentralized social web. Whether you&apos;re
-              an engineer working on protocols, or an organizer building
-              community, this conference is for you.
+              <RoomA /> is reserved for the Opening, Closing, and the Hallway
+              track. At any point if you have questions, concerns, or require a
+              moderator, we encourage to pop into <RoomA /> to find a member of
+              the DecentSocial team.
+            </p>
+            <p>
+              The rest of the rooms, B-Z, are for your unconference sessions.
+              Sessions can be registered on the <RegistrationSheet />, where you
+              can let everyone know what Room you will be meeting in and what
+              the session will be about.
+            </p>
+            <p>Here are the links for all the meeting rooms:</p>
+            <p>
+              <RoomB />
+              {' // '}
+              <RoomC />
+              {' // '}
+              <RoomD />
+              {' // '}
+              <RoomE />
+              {' // '}
+              <RoomF />
+              {' // '}
+              <RoomG />
+              {' // '}
+              <RoomH />
+              {' // '}
+              <RoomI />
+              {' // '}
+              <RoomJ />
+              {' // '}
+              <RoomK />
+              {' // '}
+              <RoomL />
+              {' // '}
+              <RoomM />
+              {' // '}
+              <RoomN />
+              {' // '}
+              <RoomO />
+              {' // '}
+              <RoomP />
+              {' // '}
+              <RoomQ />
+              {' // '}
+              <RoomR />
+              {' // '}
+              <RoomS />
+              {' // '}
+              <RoomT />
+              {' // '}
+              <RoomU />
+              {' // '}
+              <RoomV />
+              {' // '}
+              <RoomW />
+              {' // '}
+              <RoomX />
+              {' // '}
+              <RoomY />
+              {' // '}
+              <RoomZ />
+            </p>
+            <p>
+              You can always refer to the <ConferenceGuide /> if you need more
+              information.
             </p>
           </div>
-          <Button href="/register" className="mt-10 w-full sm:hidden">
-            Register now
-          </Button>
-          <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
-            {[
-              ['Cost', 'Free'],
-              ['People Attending', attendees.length],
-              ['Keynote Speaker', 'You'],
-              ['Location', 'Online'],
-            ].map(([name, value]) => (
-              <div key={name}>
-                <dt className="font-mono text-sm text-blue-600">{name}</dt>
-                <dd className="mt-0.5 text-2xl font-semibold tracking-tight text-blue-900">
-                  {value}
-                </dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </Container>
     </div>

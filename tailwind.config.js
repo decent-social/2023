@@ -24,6 +24,12 @@ module.exports = {
         '4xl': '2rem',
         '5xl': '2.5rem',
       },
+      colors: {
+        'witch-purple': '#9479ba',
+        'witch-dark-blue': '#324366',
+        'witch-light-blue': '#78a5b1',
+        'witch-white': '#e8e6e1',
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         display: ['DM Sans', ...defaultTheme.fontFamily.sans],

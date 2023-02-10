@@ -381,24 +381,6 @@ function ScheduleStatic() {
 export function Schedule() {
   return (
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
-      <Container className="relative z-10">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Building a decent social web is a global problem, and our schedule
-            is designed to be accessible to all timezones.
-          </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Each session will have a few rooms running in parallel moderated by
-            different members of the community. If you are interested in serving
-            as a moderator of a room for one or more of our regions, please
-            reach out to{' '}
-            <a href="mailto:organizers@decentsocial.net">
-              organizers@decentsocial.net
-            </a>
-            .
-          </p>
-        </div>
-      </Container>
       <div className="relative mt-14 sm:mt-24">
         <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
           <Image
