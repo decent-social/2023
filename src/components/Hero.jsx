@@ -34,15 +34,17 @@ import {
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-      </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-witch-purple sm:text-7xl">
-            DecentSocial is happening now!
+            Welcome!
           </h1>
+          <Button
+            href="https://decentsocial.meet.coop/mor-rlm-s3t-m0w"
+            className="mt-5 font-display text-5xl font-bold tracking-tighter text-witch-purple sm:text-7xl"
+          >
+            Join the Conference
+          </Button>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-witch-dark-blue">
             <p>
               DecentSocial is using meet.coop to run our virtual unconference.
