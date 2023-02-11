@@ -391,8 +391,8 @@ export function Schedule() {
             height={1495}
             unoptimized
           />
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-witch-white" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-witch-white" />
         </div>
         <Container className="relative">
           <ScheduleTabbed />

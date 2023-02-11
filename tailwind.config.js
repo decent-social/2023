@@ -28,7 +28,7 @@ module.exports = {
         'witch-purple': '#9479ba',
         'witch-dark-blue': '#324366',
         'witch-light-blue': '#78a5b1',
-        'witch-white': '#e8e6e1',
+        'witch-white': '#f3f3f9',
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],

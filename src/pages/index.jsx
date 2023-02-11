@@ -26,7 +26,7 @@ export default function Home({ attendees }) {
         <script async src="https://pol.is/embed.js"></script>
       </Head>
       <Header />
-      <main>
+      <main className="bg-witch-white">
         <Hero />
         <Schedule />
         <Polis />
